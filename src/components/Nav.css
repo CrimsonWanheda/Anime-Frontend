@@ -1,0 +1,106 @@
+.nav, .nav ul{
+    background: #212121;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+}
+
+.nav ul .navf li{
+    padding: 0 30px;
+    border-right: solid 1px #707070;
+}
+
+.nav ul .navs li{padding: 0 30px;}
+
+.nav ul .navs .li-login{border-right: solid 1px #707070;}
+
+.nav ul .navs .li-login p{
+    font-size: 15px;
+    text-align: center;
+}
+
+.nav ul .navs .li-signup p{
+    width: 100%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.nav ul div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.nav ul div li{
+    list-style: none;
+    font-size: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 700;
+}
+
+.nav ul div li:hover{background: #2e2e2e;}
+
+.nav ul div li a{
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+}
+
+.nav ul div li a p{
+    margin: 10px 0;
+    text-align: center;
+}
+
+.nav ul .navs li a p{
+    margin: 18px 0;
+    text-align: center;
+}
+
+.nav ul li a:visited{color: #ffffff;}
+
+.nav .btn_menu{
+    margin-right: 30px;
+    font-size: 25px;
+    color: #fff;
+    cursor: pointer;
+    display: none;   
+}
+
+
+
+@media screen and (max-width: 620px){
+    .nav div a p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .nav .btn_menu{
+        display: inline-block;
+    }
+    .nav{background: #000;}
+    .nav ul{
+        position: fixed;
+        width: 100vw;
+        height: calc(25% - 120px);
+        top: -150px;
+        transition: all 1s;
+    }
+    .nav ul div{
+        flex-direction: column;
+        
+    }
+    .nav ul .navs .li-login p, .nav ul .navs .li-signup p{
+        font-size: 12px;
+    }
+
+    .nav ul .navf li, .nav ul .navs .li-login{
+        border: none;
+        margin: 10px 0px;
+    }
+}
+
+ul.show{
+    top: 120px;
+}
