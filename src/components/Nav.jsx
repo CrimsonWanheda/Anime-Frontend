@@ -10,6 +10,7 @@ const Nav = ()=>{
         <Fragment>
             <nav className="nav">
                 <ul className='ul'>
+                    <span className='backdivs'></span>
                     <div className="navf">
                         <li className="li-inicio"><Link to="#inicio">
                             <p>Inicio</p>
@@ -36,6 +37,7 @@ const Nav = ()=>{
                     menu_items.classList.toggle('show');
                     
                 }} /></span>
+                
             </nav>
         </Fragment>
     )

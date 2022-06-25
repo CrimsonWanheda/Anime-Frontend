@@ -1,0 +1,117 @@
+/* titleMain */
+.sectionTitle{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.sectionTitle .ladoIzq{
+    width: 200px;
+    height: 65px;
+    background: #3B3B3B;
+    display: block;
+    float: left;
+    transform: rotate(140deg);
+    position: relative;
+    top: 25px;
+    left: 45px;
+    overflow: hidden;
+    z-index: 0;
+}
+.sectionTitle .ladoDer{
+    width: 200px;
+    height: 65px;
+    background: #3B3B3B;
+    display: block;
+    float: right;
+    transform: rotate(220deg);
+    position: relative;
+    top: 25px;
+    left: -45px;
+    overflow: hidden;
+    z-index: 0;
+}
+.sectionTitle .titlePage{
+    width: 199px;
+    height: 100%;
+    z-index: 1;
+}
+.sectionTitle .titlePagemin{
+    display: none;
+}
+
+/* Profile */
+.sectionTitle .photoProfile{
+    position: absolute;
+    right: 10px;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sectionTitle .photoProfile .profileImage{
+    width: 90px;
+    min-width: 70px;
+    height: 75px;
+    background: #3B3B3B;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.sectionTitle .photoProfile .profileImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sectionTitle .photoProfile p{
+    text-align: center;
+    color: #C5C5C5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* Media queries */
+@media screen and (max-width: 700px){
+    .sectionTitle{
+        margin-bottom: 0;
+        justify-content: flex-start;
+    }
+    .sectionTitle .titlePage{
+        width: 175px;
+    }
+    .sectionTitle .ladoDer, .sectionTitle .ladoIzq{display: none;}
+    .sectionTitle .photoProfile .profileImage{
+        width: 50px;
+        min-width: 50px;
+        height: 45px;
+    }
+    .sectionTitle .photoProfile p{
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .sectionTitle .titlePage{display: none;}
+    .sectionTitle .ladoDer, .sectionTitle .ladoIzq{display: none;}
+    .sectionTitle .photoProfile .profileImage{
+        width: 40px;
+        min-width: 40px;
+        height: 35px;
+    }
+    .sectionTitle .photoProfile p{
+        margin-top: 12px;
+        font-size: 10px;
+    }
+    .sectionTitle .photoProfile{
+        right: 0px;
+    }
+    .sectionTitle .titlePagemin{
+        display: block;
+        color: #fff;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        position: absolute;
+        left: 4px;
+        top: 4px;
+        font-size: 23px;
+        background: #3b3b3b00;
+    }
+}
