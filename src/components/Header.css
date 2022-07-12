@@ -6,29 +6,35 @@
 }
 .sectionTitle .ladoIzq{
     width: 200px;
-    height: 65px;
+    height: 66px;
     background: #3B3B3B;
     display: block;
     float: left;
-    transform: rotate(140deg);
+    transform: rotate(142deg);
     position: relative;
-    top: 25px;
-    left: 45px;
+    top: 29px;
+    left: 53px;
     overflow: hidden;
     z-index: 0;
+    box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.39);
 }
 .sectionTitle .ladoDer{
     width: 200px;
-    height: 65px;
+    height: 66px;
     background: #3B3B3B;
     display: block;
     float: right;
-    transform: rotate(220deg);
+    transform: rotate(218deg);
     position: relative;
-    top: 25px;
-    left: -45px;
+    top: 29px;
+    left: -53px;
     overflow: hidden;
     z-index: 0;
+    box-shadow: -30px 30px 30px rgba(0, 0, 0, 0.39);
+    -webkit-box-shadow: -30px 30px 30px rgba(0, 0, 0, 0.39);
+    -moz-box-shadow: -30px 30px 30px rgba(0, 0, 0, 0.39);
 }
 .sectionTitle .titlePage{
     width: 199px;

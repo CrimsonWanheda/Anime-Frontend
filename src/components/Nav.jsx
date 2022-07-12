@@ -12,7 +12,7 @@ const Nav = ()=>{
                 <ul className='ul'>
                     <span className='backdivs'></span>
                     <div className="navf">
-                        <li className="li-inicio"><Link to="#inicio">
+                        <li className="li-inicio"><Link to="/">
                             <p>Inicio</p>
                             
                         </Link></li>

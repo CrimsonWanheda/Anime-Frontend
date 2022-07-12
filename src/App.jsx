@@ -1,15 +1,26 @@
 import './App.css';
+import { 
+  BrowserRouter as Router,
+  Switch,
+  Route 
+} from 'react-router-dom';
+
 import Header from './components/Header.jsx';
-import { BrowserRouter as Router } from 'react-router-dom';
+import Home from './components/Home.jsx';
+import NotFound from './components/NotFound.jsx';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <Router>
+      <Router>
           <Header/>
-        </Router>
-      </header>
+          <Switch>
+            <Route exact path="/" component={Home}/>
+            {/* <Route exact path="/login" component={Login}/>
+            <Route exact path="/join" component={SingIn}/>*/}
+            <Route exact path="*" component={NotFound}/>
+          </Switch>
+      </Router>
     </div>
   );
 }
