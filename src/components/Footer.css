@@ -1,0 +1,31 @@
+footer{
+    background: #000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0.5em 0;
+    margin-top: auto;
+}
+
+footer p{
+    color: #fff;
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    text-align: center;
+}
+
+@media screen and (max-width: 596px){
+    footer p, footer a{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 290px){
+    footer p, footer a{
+        font-size: 13px;
+    }
+}

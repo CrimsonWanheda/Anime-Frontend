@@ -8,6 +8,7 @@ import {
 import Header from './components/Header.jsx';
 import Home from './components/Home.jsx';
 import NotFound from './components/NotFound.jsx';
+import Footer from './components/Footer.jsx';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route exact path="/join" component={SingIn}/>*/}
             <Route exact path="*" component={NotFound}/>
           </Switch>
+          <Footer/>
       </Router>
     </div>
   );
