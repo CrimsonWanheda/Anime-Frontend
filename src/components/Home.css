@@ -45,6 +45,7 @@
 .content article ul li .textanime{
     display: block;
     font-family: 'Ubuntu', sans-serif;
+    color: black;
 }
 
 .content article ul li .textanime .animetitle{
@@ -79,6 +80,7 @@
 }
 
 @media screen and (max-width: 290px){
+    .content article{width: 85%;}
     .content article ul li{width: 120px;}
     .content article ul li img{
         width: 100px;

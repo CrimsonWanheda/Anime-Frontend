@@ -1,0 +1,17 @@
+.rating{display: none;}
+.rating input[ type="radio"]{
+    display: none;
+}
+
+.rating .star{
+    cursor: pointer;
+    transition: color 200ms;
+}
+
+.rating p{
+    text-align: center;
+}
+
+.discover{
+    display: block;
+}

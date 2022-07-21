@@ -18,6 +18,10 @@ footer a{
     text-align: center;
 }
 
+footer a:hover{
+    color: #c2c2c2;
+}
+
 @media screen and (max-width: 596px){
     footer p, footer a{
         font-size: 15px;

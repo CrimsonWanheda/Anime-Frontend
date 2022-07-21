@@ -23,7 +23,7 @@ const Nav = ()=>{
                     </div>
 
                     <div className="navs">
-                        <li className="li-login"><Link to="#login">
+                        <li className="li-login"><Link to="/login">
                             <p>Iniciar Sesion</p>
                             
                         </Link></li>

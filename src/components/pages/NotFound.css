@@ -1,0 +1,44 @@
+.notFoundContainer{
+    margin: 1% auto;
+    width: 90%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 102px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 102px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 102px 0px rgba(0,0,0,0.75);
+    padding: 2% 2% 1% 2%;
+}
+
+.notFoundContainer img{
+    width: 200px;
+}
+
+.notFoundContainer h1, .notFoundContainer h4{
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+}
+
+.notFoundContainer h1{
+    font-weight: 600;
+    font-style: italic;
+    font-size: 56px;
+}
+
+.notFoundContainer h4{
+    font-weight: 400;
+    font-size: 26px;
+}
+
+@media screen and (max-width: 490px){
+    .notFoundContainer h1{font-size: 46px;}
+    .notFoundContainer h4{font-size: 22px;}
+}
+
+@media screen and (max-width: 250px){
+    .notFoundContainer h1{font-size: 40px;}
+    .notFoundContainer h4{font-size: 18px;}
+}
