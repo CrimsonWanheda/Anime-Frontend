@@ -25,11 +25,18 @@
     grid-gap: 10px;
     grid-auto-flow: dense;
     justify-items: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.content article ul a{
+    height: auto;
 }
 .content article ul li{
     display: inline-block;
     width: 150px;
-    margin: 0 0 3rem 0;
+    margin: 0;
     background: #fff;
     padding: 10px;
 }

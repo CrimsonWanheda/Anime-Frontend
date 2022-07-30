@@ -1,0 +1,16 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.wrapper button{
+    background: none;
+    border: none;
+    margin: 0 2px;
+    font-size: 20px;
+}
+
+.wrapper button:hover{color: rgb(207, 0, 0);}
